@@ -29,9 +29,16 @@
     return res;
 }
 
-- (int) countchars {
-    
-    
+- (int) ocurrences:(unichar)ch {
+    NSString *character = @"a";
+    NSString *tmp = [self lowercaseString];
+    int resu=0;
+    for (int i=0; i<tmp.length; i++) {
+        if (tmp == character) {
+            resu++;
+        }
+    }
+    return resu;
 }
 
 

@@ -38,6 +38,12 @@
     self.result.text = [NSString stringWithFormat:@"%i",res];
 }
 
+/* A REVISION EN CLASE
+- (IBAction)cuentaCaracteres {
+    int res = [self.stringTf.text ocurrences:@"%"];
+    self.result.text = [NSString stringWithFormat:@"%i", res];
+}
+*/
 
 - (IBAction)ocultaTeclado {
 }

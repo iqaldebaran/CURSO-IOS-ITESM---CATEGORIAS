@@ -14,5 +14,6 @@
 - (IBAction)reverse;
 - (IBAction)ocultaTeclado;
 - (IBAction)vocales;
+- (IBAction)cuentaCaracteres;
 
 @end
