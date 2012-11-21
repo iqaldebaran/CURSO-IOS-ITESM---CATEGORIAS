@@ -11,6 +11,7 @@
 @interface NSString (MyString)
 - (NSString *) reverse;
 - (int) vowels;
+- (int) countchars;
 
 
 @end

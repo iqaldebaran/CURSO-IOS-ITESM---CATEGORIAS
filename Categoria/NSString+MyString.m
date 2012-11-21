@@ -29,5 +29,11 @@
     return res;
 }
 
+- (int) countchars {
+    
+    
+}
+
+
 
 @end
