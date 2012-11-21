@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rsc-Zx-Njq">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ocultaTeclado" destination="2" eventType="editingDidEndOnExit" id="h5j-EB-nKq"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-jJ-rNb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-tA-bt6">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverse" destination="2" eventType="touchUpInside" id="d5r-ai-Fsv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pe-4x-kYo">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverse" destination="2" eventType="touchUpInside" id="vnx-Bc-Tz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-wT-cEh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cuenta Vocales">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vocales" destination="2" eventType="touchUpInside" id="32h-16-Eha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rsc-Zx-Njq" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8Rx-rA-lKj"/>
+                            <constraint firstItem="vCC-tA-bt6" firstAttribute="centerX" secondItem="sIR-jJ-rNb" secondAttribute="centerX" type="default" id="AmZ-wQ-BuH"/>
+                            <constraint firstItem="lQ3-wT-cEh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="215" id="QjI-80-ldN"/>
+                            <constraint firstItem="Rsc-Zx-Njq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="55" id="cCa-nW-kba"/>
+                            <constraint firstItem="vCC-tA-bt6" firstAttribute="centerX" secondItem="Rsc-Zx-Njq" secondAttribute="centerX" type="default" id="ctL-fY-X3m"/>
+                            <constraint firstItem="7pe-4x-kYo" firstAttribute="baseline" secondItem="vCC-tA-bt6" secondAttribute="baseline" type="default" id="dGN-3a-KAI"/>
+                            <constraint firstItem="lQ3-wT-cEh" firstAttribute="centerX" secondItem="sIR-jJ-rNb" secondAttribute="centerX" type="default" id="f4d-fv-d9i"/>
+                            <constraint firstItem="sIR-jJ-rNb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="172" id="gyL-0T-giI"/>
+                            <constraint firstItem="vCC-tA-bt6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="109" id="o05-sV-Dg5"/>
+                            <constraint firstAttribute="trailing" secondItem="Rsc-Zx-Njq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vhA-Nr-V81"/>
+                            <constraint firstItem="7pe-4x-kYo" firstAttribute="leading" secondItem="vCC-tA-bt6" secondAttribute="leading" type="default" id="zZE-YH-Mlq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="sIR-jJ-rNb" id="yXd-Gs-Zme"/>
+                        <outlet property="stringTf" destination="Rsc-Zx-Njq" id="moF-uR-yZ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="152"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
